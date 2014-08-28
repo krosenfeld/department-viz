@@ -1,0 +1,501 @@
+{
+  "students": [
+    {
+      "name": "Kate Alexander",
+      "advisor": ["John Kovac"],
+      "status":"student"
+    },
+    {
+      "name": "Fernando Becerra",
+      "advisor": ["Lars Hernquist"],
+      "status":"student"
+    },
+    { 
+      "name": "Peter Blanchard",
+      "advisor": ["Edo Berger"],
+      "status":"student"
+    },
+    { 
+      "name": "Victor Buza",
+      "advisor": ["John Kovac"],
+      "status":"physics student"
+    },
+    { 
+      "name": "Michelle Borkin",
+      "advisor": ["Alyssa Goodman"],
+      "status":"seas student"
+    },
+    {
+      "name": "Aaron Bray",
+      "advisor": ["Daniel Eisenstein", "Lars Hernquist"],
+      "status":"student"
+    },
+    { 
+      "name": "Andrew Chael",
+      "advisor": ["John Kovac"],
+      "status":"physics student"
+    },
+    {
+      "name": "Hope Chen",
+      "advisor": ["Alyssa Goodman"],
+      "status":"student"
+    },
+    {
+      "name": "Jieun Choi",
+      "advisor":["Charlie Conroy"],
+      "status":"student"
+    },
+    {
+      "name": "Pierre Christian",
+      "advisor":["Avi Loeb"],
+      "status":"student"
+    },
+    {
+      "name": "Eddie Chua",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Jake Connors",
+      "advisor":["John Kovac"],
+      "status":"physics student"
+    },
+    {
+      "name": "Benjamin Cook",
+      "advisor":[],
+      "status":"student"
+    },
+    {
+      "name": "Philip Cowperthwaite",
+      "advisor":["Edo Berger"],
+      "status":"student"
+    },
+    {
+      "name": "Ian Czekala",
+      "advisor":["Sean Andrews"],
+      "status":"student"
+    },
+    {
+      "name": "Tansu Daylan",
+      "advisor":["Doug Finkbeiner"],
+      "status":"physics student"
+    },
+    {
+      "name": "Marion Dierickx",
+      "advisor":["Avi Loeb"],
+      "status":"student"
+    },
+    {
+      "name": "Jason Dittman",
+      "advisor":["David Charbonneau"],
+      "status":"student"
+    },
+    {
+      "name": "Courtney Dressing",
+      "advisor":["David Charbonneau"],
+      "status":"student"
+    },
+    {
+      "name": "Maria Drout",
+      "advisor":["Edo Berger"],
+      "status":"student"
+    },
+    {
+      "name": "Christopher Faesi",
+      "advisor":["Alyssa Goodman", "Charlie Lada"],
+      "status":"student"
+    },
+    {
+      "name": "Douglas Ferrer",
+      "advisor":["Daniel Eisenstein"],
+      "status":"student"
+    },
+    {
+      "name": "Patrick Fitzpatrick",
+      "advisor":[],
+      "status":"student"
+    },
+    {
+      "name": "Lehman Garrison",
+      "advisor":["Daniel Eisenstein"],
+      "status":"student"
+    },
+    {
+      "name": "Dawn Graninger",
+      "advisor":["Karin Oberg"],
+      "status":"student"
+    },
+    {
+      "name": "Gregory Green",
+      "advisor":["Doug Finkbeiner"],
+      "status":"student"
+    },
+    {
+      "name": "Meng Gu",
+      "advisor":["Charlie Conroy"],
+      "status":"student"
+    },
+    {
+      "name": "Xinyi Guo",
+      "advisor":["Ramesh Narayan"],
+      "status":"student"
+    },
+    {
+      "name": "Jane Huang",
+      "advisor":[],
+      "status":"student"
+    },
+    {
+      "name": "Kirit Karkare",
+      "advisor":["John Kovac"],
+      "status":"student"
+    },
+    {
+      "name": "Luke Kelley",
+      "advisor":["Ramesh Narayan"],
+      "status":"student"
+    },
+    {
+      "name": "Tanmoy Laskar",
+      "advisor":["Edo Berger"],
+      "status":"student"
+    },
+    {
+      "name": "John Lewis",
+      "advisor":["Charlie Lada"],
+      "status":"student"
+    },
+    {
+      "name": "Gongjie Li",
+      "advisor":["Avi Loeb"],
+      "status":"student"
+    },
+    {
+      "name": "Ryan Loomis",
+      "advisor":["Karin Oberg"],
+      "status":"student"
+    },
+    {
+      "name": "Albert Lee",
+      "advisor":["Doug Finkbeiner"],
+      "status":"physics student"
+    },
+    {
+      "name": "Ragnhild Lunnan",
+      "advisor":["Edo Berger"],
+      "status":"student"
+    },
+    {
+      "name": "Meredith MacGregor",
+      "advisor":["David Wilner"],
+      "status":"student"
+    },
+    {
+      "name": "Natalie Mashian",
+      "advisor":["Avi Loeb"],
+      "status":"physics student"
+    },
+    {
+      "name": "Aaron Meisner",
+      "advisor":["Doug Finkbeiner"],
+      "status":"physics student"
+    },
+    {
+      "name": "George Miller",
+      "advisor":["Josh Grindlay"],
+      "status":"student"
+    },
+    {
+      "name": "Philip Mocz",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Maxwell Moe",
+      "advisor":["Roseanne DiStefano"],
+      "status":"student"
+    },
+    {
+      "name": "Ben Montet",
+      "advisor":["John Johnson"],
+      "status":"student"
+    },
+    {
+      "name": "Dylan Nelson",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Daniyar Nurgaliev",
+      "advisor":["Chris Stubbs"],
+      "status":"physics student"
+    },
+    {
+      "name": "Elizabeth Newton",
+      "advisor":["David Charbonneau"],
+      "status":"student"
+    },
+    {
+      "name": "Anna Patej",
+      "advisor":["Chris Stubbs", "Avi Loeb"],
+      "status":"physics student"
+    },
+    {
+      "name": "Ana-Maria Piso",
+      "advisor":["Ruth Murray-Clay","Karin Oberg"],
+      "status":"student"
+    },
+    {
+      "name": "Stephen Portillo",
+      "advisor":["Doug Finkbeiner"],
+      "status":"student"
+    },
+    {
+      "name": "Sukrit Ranjan",
+      "advisor":["Dimitar Sasselov"],
+      "status":"student"
+    },
+    {
+      "name": "Vicente Rodriguez-Gomez",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Douglas Rubin",
+      "advisor":["Avi Loeb"],
+      "status":"physics student"
+    },
+    {
+      "name": "Katherine Rosenfeld",
+      "advisor":["Sean Andrews"],
+      "status":"student"
+    },
+    {
+      "name": "Sarah Rugheimer",
+      "advisor":["Dimitar Sasselov","Lissa Kaltenegger"],
+      "status":"student"
+    },
+    {
+      "name": "Laura Schaefer",
+      "advisor":["Dimitar Sasselov"],
+      "status":"student"
+    },
+    {
+      "name": "Yutong Shan",
+      "advisor":["John Johnson"],
+      "status":"student"
+    },
+    {
+      "name": "Zachary Slepian",
+      "advisor":["Daniel Eisenstein"],
+      "status":"student"
+    },
+    {
+      "name": "Joshua Suresh",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Yuan Sen-Ting",
+      "advisor":["Alexey Vikhlinin"],
+      "status":"student"
+    },
+    {
+      "name": "Anjali Tripathi",
+      "advisor":["Ruth Murray-Clay"],
+      "status":"student"
+    },
+    {
+      "name": "Andrew Vanderburg",
+      "advisor":["John Johnson"],
+      "status":"student"
+    },
+    {
+      "name": "Victoria Villar",
+      "advisor":[],
+      "status":"student"
+    },
+    {
+      "name": "Xiawei Wang",
+      "advisor":["Avi Loeb"],
+      "status":"student"
+    },
+    {
+      "name": "Sarah Wellons",
+      "advisor":["Lars Hernquist"],
+      "status":"student"
+    },
+    {
+      "name": "Chin Lin Wong",
+      "advisor":["John Kovac"],
+      "status":"physics student"
+    },
+    {
+      "name": "Lauren Woolsey",
+      "advisor":["Steven Cranmer"],
+      "status":"student"
+    },
+    {
+      "name": "Ioana Zelko",
+      "advisor":[],
+      "status":"student"
+    },
+    {
+      "name": "Li Zeng",
+      "advisor":["Dimitar Sasselov"],
+      "status":"student"
+    },
+    {
+      "name": "Mary Zhang",
+      "advisor":["Daniel Eisenstein"],
+      "status":"student"
+    },
+    {
+      "name": "Yucong Zhu",
+      "advisor":["Ramesh Narayan"],
+      "status":"student"
+    }
+  ],
+  "faculty": [
+    {
+      "name":"Charles Alcock",
+      "status":"faculty",
+      "affiliation":["DO"]
+    },
+    {
+      "name":"Sean Andrews",
+      "status":"sao",
+      "affiliation":["RG"]
+    },
+    {
+      "name": "Edo Berger",
+      "status":"faculty",
+      "affiliation":["OIR"]
+    },
+    {
+      "name": "David Charbonneau",
+      "status":"faculty",
+      "affiliation":["SSP"]
+    },
+    {
+      "name": "Charlie Conroy",
+      "status":"faculty",
+      "affiliation":["OIR"]
+    },
+    {
+      "name":"Steven Cranmer",
+      "status":"sao",
+      "affiliation":["SSP","TA"]
+    },
+    {
+      "name":"Roseanne DiStefano",
+      "status":"sao",
+      "affiliation":["TA","HEA"]
+    },
+    {
+      "name": "Daniel Eisenstein",
+      "status":"faculty",
+      "affiliation":["OIR"]
+    },
+    {
+      "name": "Doug Finkbeiner",
+      "status":"faculty",
+      "affiliation":["TA"]
+    },
+    {
+      "name": "Alyssa Goodman",
+      "status":"faculty",
+      "affiliation":["RG"]
+    },
+    {
+      "name": "Josh Grindlay",
+      "status":"faculty",
+      "affiliation":["HEA"]
+    },
+    {
+    "name": "Lars Hernquist",
+      "status":"faculty",
+      "affiliation":["TA"]
+    },
+    {
+    "name": "John Johnson",
+      "status":"faculty",
+      "affiliation":["SSP"]
+    },
+    {
+      "name": "Bob Kirshner",
+      "status":"faculty",
+      "affiliation":["OIR"]
+    },
+    {
+      "name": "John Kovac",
+      "status":"faculty",
+      "affiliation":["RG"]
+    },
+    {
+      "name":"Charlie Lada",
+      "status":"sao",
+      "affiliation":["RG"]
+    },
+    {
+      "name": "Avi Loeb",
+      "status":"faculty",
+      "affiliation":["TA"]
+    },
+    {
+      "name":"Jim Moran",
+      "status":"faculty",
+      "affiliation":["RG"]
+    },
+    {
+      "name":"Ruth Murray-Clay",
+      "status":"sao",
+      "affiliation":["TA"]
+    },
+    {
+      "name": "Ramesh Narayan",
+      "status":"faculty",
+      "affiliation":["TA"]
+    },
+    {
+      "name": "Karin Oberg",
+      "status":"faculty",
+      "affiliation":["SSP","RG"]
+    },
+    {
+      "name": "Philip Sadler",
+      "status":"faculty",
+      "affiliation":["SED"]
+    },
+    {
+      "name": "Dimitar Sasselov",
+      "status":"faculty",
+      "affiliation":["SSP","TA"]
+    },
+    {
+      "name": "Irwin Shapiro",
+      "status":"faculty",
+      "affiliation":["RG"]
+    },
+    {
+      "name": "Chris Stubbs",
+      "status":"faculty",
+      "affiliation":["TA","OIR"]
+    },
+    {
+      "name": "Alicia Soderberg",
+      "status":"faculty",
+      "affiliation":["OIR"]
+    },
+    {
+      "name":"Alexey Vikhlinin",
+      "status":"sao",
+      "affiliation":["HEA"]
+    },
+    {
+      "name":"David Wilner",
+      "status":"sao",
+      "affiliation":["RG"]
+    }
+  ]
+}

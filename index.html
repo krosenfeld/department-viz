@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Department Graph</title>
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var width=500,
+    height=500;
+var affiliation = false;
+
+d3.select("body").append("h1")
+  .text("Graph of Astronomy Department");
+
+var svg = d3.select("body").append("svg")
+            .attr("width",width)
+            .attr("height",height);
+
+var fill = d3.scale.category10();
+
+var graph;
+
+d3.json("department2014.json",function(json){
+
+  // populate graph
+  graph = {nodes:[],links:[]};
+  var nFaculty = json.faculty.length;
+  for (var i=0;i<nFaculty;i++){
+    graph.nodes.push(json.faculty[i]);
+  };
+  for (var i=0;i<json.students.length;i++){
+    graph.nodes.push(json.students[i]);
+    for (var j=0;j<json.students[i].advisor.length;j++){
+      for (var k=0;k<nFaculty;k++){
+        if (json.students[i].advisor[j] == json.faculty[k].name){
+          graph.links.push({"source":i+nFaculty,"target":k});
+          break;
+        };
+      };
+    };
+  };
+  console.log(graph);
+
+  // Generate the force layout
+  var force = d3.layout.force()
+                .size([width, height])
+                .nodes(graph.nodes)
+                .links(graph.links)
+                .charge([-50])
+                .on("tick",tick)
+                .on("start", function(d) {})
+                .on("end", function(d) {})
+                .start();
+
+// ********************************************
+  function tick(){
+    graphUpdate(0);
+  };
+
+  function graphUpdate(delay){
+    if (!delay) (delay = 0);
+    nodes.transition().delay(delay)
+         .attr("transform",function(d){
+            return "translate("+d.x+","+d.y+")"; 
+          })
+    links.transition().delay(delay)
+         .attr("x1",function(d) {return d.source.x;})
+         .attr("y1",function(d) {return d.source.y;})
+         .attr("x2",function(d) {return d.target.x;})
+         .attr("y2",function(d) {return d.target.y;});
+  };
+
+  function forceLayout() {
+    force.nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+  };
+
+  function radialLayout() {
+    force.stop();
+    var r = height/2;
+    var arc = d3.svg.arc()
+                .outerRadius(r);
+    var pie = d3.layout.pie()
+                .sort(function(a,b){
+                  if (a.advisor != null){
+                    var aTag = a.advisor;
+                  } else {
+                    var atag = a.name;
+                  };
+                  if (b.advisor != null){
+                    var bTag = b.advisor;
+                  } else {
+                    var bTag = b.name;
+                  };
+                  return d3.ascending(aTag, bTag)})
+                .value(function(d,i){return 1;});
+
+   graph.nodes = pie(graph.nodes).map(function(d,i){
+     d.innerRadius = 0;
+     d.outerRadius = r;
+     d.data.x = arc.centroid(d)[0] + height/2;
+     d.data.y = arc.centroid(d)[1] + width/2;
+     d.data.endAngle = d.endAngle;
+     d.data.startAngle = d.startAngle;
+     return d.data;
+  });
+  graphUpdate(500);
+  };
+
+// ********************************************
+  d3.select("input[value=\"force\"]").on("click", forceLayout);
+  d3.select("input[value=\"radial\"]").on("click", radialLayout);
+  d3.select("input[value=\"affiliation\"]").on("click",function(){ 
+    affiliation = true;
+    for (var i=0;i<json.faculty.length;i++){
+      for (var k=0;k<json.faculty.length;k++){
+        if (json.faculty[i].affiliation[0] == json.faculty[k].affiliation[0]){
+          graph.links.push({"source":i,"target":k});
+          break;
+        };
+      };
+    };
+    forceLayout();
+  })
+
+  var links = svg.selectAll("line.link")
+                 .data(graph.links)
+                 .enter()
+                 .append("line")
+                 .attr("class","link")
+
+  var nodes = svg.selectAll("g.pnode")
+                 .data(graph.nodes)
+                 .enter()
+                 .append("g")
+                 .attr("class","pnode")
+
+  nodes.append("circle")
+       .attr("r",function(d){
+         if (d.status == "faculty" || d.status == "sao"){
+          return 7;
+         } else {
+          return 5;
+         }
+       })
+       .attr("fill",function(d){
+         if (d.status == "faculty"){
+          return "red";
+         } else if (d.status == "sao"){
+          return "orange";
+         } else {
+           return "steelblue";
+         }
+        })
+       .call(force.drag)
+       .append("title")
+       .text(function(d) {
+         return d.name;
+       })
+
+
+  forceLayout();
+});
+
+</script>
+<form>
+<label><input type="radio" name="layout" value="force" checked> Force</label>
+<label><input type="radio" name="layout" value="radial"> Radial</label>  
+</p>
+<label><input type="radio" name="layout" value="affiliation"> Affiliation</label>  
+</form>
+</body>
+</html>
